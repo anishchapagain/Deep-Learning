@@ -1,3 +1,5 @@
 # Deep-Learning
- Python DeepLearning Projects
+Python Deep Learning Projects
+
+# Training 
 Deep learning using PyTorch-OCR-Training-Testing
