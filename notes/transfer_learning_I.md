@@ -130,5 +130,5 @@ To fine-tune, unfreeze last few layers and retrain with a smaller learning rate.
 2. Experiment with freezing and unfreezing layers.
 3. Compare results between feature extraction and fine-tuning.
 
-Once you are comfortable, move to more complex tasks like object detection or NLP fine-tuning using `transformers`.
+Further, move to more complex tasks like object detection or NLP fine-tuning using `transformers`.
 
