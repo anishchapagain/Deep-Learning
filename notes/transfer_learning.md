@@ -184,5 +184,5 @@ optimizer = optim.Adam(model.classifier.parameters(), lr=0.001)
 
 print(model)
 ```
-As you can see, the core idea is the same, but you need to inspect the model structure (`print(model)`) to find the correct final layer to replace. It could be `model.fc`, `model.classifier`, or something else depending on the model architecture.
+We can see the core idea is the same, but need to inspect the model structure (`print(model)`) to find the correct final layer to replace. It could be `model.fc`, `model.classifier`, or something else depending on the model architecture.
 
