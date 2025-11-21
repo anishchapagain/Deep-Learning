@@ -477,35 +477,24 @@ Dropout is a regularization technique designed to prevent overfitting in neural 
 - **Add a Dropout Layer:** Most deep learning frameworks provide a `Dropout` layer that can be added after an activation function in a hidden layer.
 - **Choose a Dropout Rate:** The dropout rate (the fraction of neurons to drop) is a hyperparameter that typically ranges from 0.2 to 0.5.
 
-1.  **[Introduction to CNNs](#1-introduction-to-cnns)**
-    1.1. [What is a Convolutional Neural Network?](#11-what-is-a-convolutional-neural-network)
-    1.2. [Why CNNs? A Comparison with Standard Neural Networks](#12-why-cnns-a-comparison-with-standard-neural-networks)
-    1.3. [A Brief History of CNNs](#13-a-brief-history-of-cnns)
-2.  **[The Fundamental Building Blocks](#2-the-fundamental-building-blocks)**
-    2.1. [What is Image Data? (Pixels, Channels, Tensors)](#21-what-is-image-data-pixels-channels-tensors)
-    2.2. [The Convolution Operation Explained](#22-the-convolution-operation-explained)
-3.  **[Core Concepts: The Power of Convolutions](#3-core-concepts-the-power-of-convolutions)**
-    3.1. [Spatial Locality](#31-spatial-locality)
-    3.2. [Parameter Sharing](#32-parameter-sharing)
-    3.3. [Hierarchical Feature Learning](#33-hierarchical-feature-learning)
-    3.4. [Visualizing What a CNN Learns](#34-visualizing-what-a-cnn-learns)
-4.  **[Anatomy of a CNN: A Deep Dive into Layers](#4-anatomy-of-a-cnn-a-deep-dive-into-layers)**
-    4.1. [The Overall Architecture Flow](#41-the-overall-architecture-flow)
-    4.2. [The Convolutional Layer](#42-the-convolutional-layer)
-    4.3. [The Activation Function (ReLU)](#43-the-activation-function-relu)
-    4.4. [The Pooling Layer](#44-the-pooling-layer)
-    4.5. [The Fully Connected Layer](#45-the-fully-connected-layer)
-5.  **[Designing a CNN Architecture](#5-designing-a-cnn-architecture)**
-    5.1. [The Mathematics: Key Formulas for Architecture Design](#51-the-mathematics-key-formulas-for-architecture-design)
-    5.2. [How Many Layers Should You Use?](#52-how-many-layers-should-you-use)
-    5.3. [Common Architectures for Image Classification](#53-common-architectures-for-image-classification)
-    5.4. [Advanced Architectures for Detection & Segmentation](#54-advanced-architectures-for-detection--segmentation)
-6.  **[Training a CNN](#6-training-a-cnn)**
-    6.1. [How CNNs Learn: The Magic of Backpropagation](#61-how-cnns-learn-the-magic-of-backpropagation)
-    6.2. [Core Tasks and Real-World Applications](#62-core-tasks-and-real-world-applications)
-7.  **[Practical Implementation with PyTorch](#7-practical-implementation-with-pytorch)**
-    7.1. [The `torchvision` Toolkit](#71-the-torchvision-toolkit)
-    7.2. [Code Example: A Simple CNN in PyTorch](#72-code-example-a-simple-cnn-in-pytorch)
-8.  **[Next Steps and Further Learning](#8-next-steps-and-further-learning)**
-    8.1. [Practical Examples & Project Ideas](#81-practical-examples--project-ideas)
-    8.2. [References](#82-references)
+## References & Further Reading
+
+### Loss Functions
+*   **PyTorch Loss Functions Documentation**: [https://pytorch.org/docs/stable/nn.html#loss-functions](https://pytorch.org/docs/stable/nn.html#loss-functions)
+*   **Understanding Categorical Cross-Entropy Loss**: [https://gombru.github.io/2018/05/23/cross_entropy_loss/](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
+
+### Gradient Descent & Backpropagation
+*   **3Blue1Brown: Neural Networks (YouTube Series)**: [https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) - An excellent visual introduction to the core concepts.
+*   **Neural Networks and Deep Learning (Michael Nielsen)**: [http://neuralnetworksanddeeplearning.com/chap2.html](http://neuralnetworksanddeeplearning.com/chap2.html) - A detailed chapter on how backpropagation works.
+
+### Activation Functions
+*   **PyTorch Non-linear Activations**: [https://pytorch.org/docs/stable/nn.html#non-linear-activation-functions](https://pytorch.org/docs/stable/nn.html#non-linear-activation-functions)
+*   **Deep Learning Book (Goodfellow et al.)**: [https://www.deeplearningbook.org/contents/mlp.html](https://www.deeplearningbook.org/contents/mlp.html) - Chapter 6 covers deep feedforward networks and activation functions.
+
+### Optimization Algorithms
+*   **An Overview of Gradient Descent Optimization Algorithms (Sebastian Ruder)**: [https://ruder.io/optimizing-gradient-descent/](https://ruder.io/optimizing-gradient-descent/) - The definitive guide to understanding different optimizers.
+*   **PyTorch Optimizers**: [https://pytorch.org/docs/stable/optim.html](https://pytorch.org/docs/stable/optim.html)
+
+### Regularization
+*   **Dropout: A Simple Way to Prevent Neural Networks from Overfitting**: [https://jmlr.org/papers/v15/srivastava14a.html](https://jmlr.org/papers/v15/srivastava14a.html) - The original paper introducing Dropout.
+*   **Batch Normalization: Accelerating Deep Network Training**: [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167) - The original paper on Batch Normalization.
