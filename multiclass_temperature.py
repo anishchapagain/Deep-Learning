@@ -27,7 +27,7 @@ from torch.utils.data import TensorDataset, DataLoader
 # --- 1. Load and Prepare the Dataset ---
 print("Step 1: Loading and preparing data...")
 # Load data from the CSV file
-df = pd.read_csv('multi_class.csv')
+df = pd.read_csv('data/multi_class.csv')
 
 # Separate features (X) and the target variable (y)
 X = df.drop('state', axis=1).values.astype(np.float32)
