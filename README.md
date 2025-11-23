@@ -22,6 +22,49 @@ It is known for its flexibility and ease of use, especially in research and deve
 
 You can find more information and get started with PyTorch on their official website: [pytorch.org](https://pytorch.org/)
 
+## Backpropagation
+
+**Backpropagation** (backward propagation of errors) is the fundamental algorithm used to train neural networks. It efficiently computes gradients of the loss function with respect to the network's weights using the chain rule of calculus. These gradients are then used to update the weights and minimize the loss.
+
+### How Backpropagation Works
+
+The backpropagation algorithm consists of two main phases:
+
+1. **Forward Pass**: Input data flows through the network layer by layer, computing activations and producing a prediction.
+2. **Backward Pass**: The error (difference between prediction and target) propagates backward through the network, computing gradients for each weight using the chain rule.
+
+### Visual Explanations
+
+#### 1. Forward Pass
+![Forward Pass Network](Images/forward_pass_network.png)
+
+The forward pass shows how input values (x₁, x₂) flow through the network from left to right. Each connection has a weight (w), and each neuron applies an activation function (typically sigmoid, ReLU, etc.) to produce outputs that become inputs for the next layer.
+
+#### 2. Backward Pass (Gradient Flow)
+![Backward Pass Gradients](Images/backward_pass_gradients.png)
+
+The backward pass demonstrates how gradients flow from right to left, starting from the loss function. Using the chain rule, we compute ∂L/∂w for each weight, showing how much each weight contributed to the error. Gradients guide weight updates to minimize the loss.
+
+#### 3. Complete Backpropagation Flow
+![Complete Backpropagation Flow](Images/complete_backpropagation_flow.png)
+
+This comprehensive diagram shows both forward (blue arrows) and backward (red arrows) passes simultaneously. It illustrates how the forward pass computes predictions while the backward pass computes gradients, with mathematical notation showing the chain rule in action: ∂L/∂w = ∂L/∂y × ∂y/∂h × ∂h/∂w.
+
+#### 4. Step-by-Step Calculation
+![Backpropagation Step by Step](Images/backprop_step_by_step.png)
+
+This detailed breakdown shows the complete backpropagation process with numerical examples:
+- **Panel 1**: Forward pass computation with actual values
+- **Panel 2**: Loss calculation and its derivative
+- **Panel 3**: Gradient computation using the chain rule
+- **Panel 4**: Weight update using gradient descent (w_new = w - η×∂L/∂w)
+
+### Key Concepts
+
+- **Chain Rule**: Backpropagation applies the chain rule to compute how changes in weights affect the final loss
+- **Gradient Descent**: Weights are updated in the direction that reduces the loss: w = w - learning_rate × gradient
+- **Vanishing/Exploding Gradients**: In deep networks, gradients can become very small (vanishing) or very large (exploding) as they propagate backward
+
 ## Folder Structure
 
 *   **`data/`**: This directory contains various datasets used for training and testing deep learning models. Will get updated as I get new datasets or play with new datasets.
