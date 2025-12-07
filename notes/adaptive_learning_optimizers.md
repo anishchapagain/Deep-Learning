@@ -503,10 +503,3 @@ Adaptive optimizers, particularly **Adam** and **AdamW**, have revolutionized de
 3. **Consider SGD with momentum** for final models in computer vision (if you have time to tune)
 4. **Don't forget** learning rate scheduling can help any optimizer
 5. **Understand the math** to debug training issues effectively
-
-**Happy training!**
-
----
-
-*Last Updated: November 2025*  
-*Questions or feedback? Feel free to reach out!*

@@ -523,4 +523,4 @@ This family retains the original architecture but supercharges it with modern pr
 -   **[The Illustrated Transformer by Jay Alammar](http.jalammar.github.io/illustrated-transformer/)**: An excellent, intuitive, and visual explanation of the Transformer. A must-read for anyone new to the topic.
 -   **[The Annotated Transformer by Harvard NLP](http://nlp.seas.harvard.edu/2018/04/03/attention.html)**: A detailed, code-first breakdown of the paper implemented in PyTorch. An invaluable resource for implementation details.
 -   **[The Illustrated Word2vec by Jay Alammar](http.jalammar.github.io/illustrated-word2vec/)**: A great primer on word embeddings, which are the inputs to these models.
-- -   **[The Illustrated BERT by Jay Alammar](http.jalammar.github.io/illustrated-bert/)**: To understand how the Transformer's encoder is use             │in modern language models like BERT.
+-   **[The Illustrated BERT by Jay Alammar](http.jalammar.github.io/illustrated-bert/)**: To understand how the Transformer's encoder is used in modern language models like BERT.

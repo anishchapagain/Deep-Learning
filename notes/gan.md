@@ -1,10 +1,6 @@
 # Generative Adversarial Networks (GANs)
 
-### A Deep Dive into the Dynamics of Digital Creation
-
----
-
-# What is a GAN? The Core Idea
+## What is a GAN? The Core Idea
 
 *   **A Generative Model:** A GAN is a class of machine learning framework that learns to generate new data with the same statistics as the training set. If you train it on photos of faces, it learns to generate new, realistic faces.
 
