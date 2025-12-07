@@ -131,4 +131,3 @@ This way, you can evaluate or deploy your model directly without retraining.
 - Loading saved weights is crucial for evaluation, transfer learning, and deployment.
 
 **In short:** Model loading allows you to reuse trained knowledge efficiently, continue training from saved checkpoints, and deploy models seamlessly for real-world applications.
-

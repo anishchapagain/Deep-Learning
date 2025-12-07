@@ -94,6 +94,3 @@ Adhering to standards ensures code quality and reproducibility.
 *   **Python**: PEP 8, type hinting, docstrings.
 *   **Project Structure**: Organized directories for data, models, notebooks, scripts.
 *   **MLOps**: Experiment tracking, model versioning, reproducibility.
-
----
-*This overview synthesizes content from the `notes` directory. Refer to individual files for detailed explanations and code examples.*

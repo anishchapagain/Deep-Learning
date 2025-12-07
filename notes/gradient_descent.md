@@ -2,8 +2,6 @@
 
 Gradient descent algorithm, a cornerstone of training neural networks and other machine learning models.
 
----
-
 ## 1. Introduction to Gradient Descent
 
 In machine learning, **training a model** means finding the optimal set of parameters (weights and biases) that minimizes a **loss function**. The loss function measures how far the model's predictions are from the actual target values.
@@ -42,8 +40,6 @@ In deep networks, gradients are calculated via the chain rule, meaning they are 
 
 ![A saddle point in a loss landscape](imgo/sadd.gif)
 
----
-
 ## 2. Core Concepts
 
 ### The Loss Function
@@ -54,7 +50,6 @@ The **gradient** is a vector of partial derivatives that points in the direction
 
 For a loss function `L` with parameters `w`, the gradient is denoted as `∇L`.
 
----
 
 ## 3. The Gradient Descent Algorithm
 
@@ -428,7 +423,6 @@ print(f"Learned parameters: w = {model_mini_batch.weight.item():.3f}, b = {model
 4.  In which scenario would you prefer SGD over Batch Gradient Descent, and why?
 5.  What is the role of `optimizer.zero_grad()` in a PyTorch training loop?
 
----
 
 ## 11. References
 

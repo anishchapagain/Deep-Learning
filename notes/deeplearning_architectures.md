@@ -2,8 +2,6 @@
 
 Overview of various deep learning architectures.
 
----
-
 ## 1. Multi-layer Perceptrons (MLP)
 
 ### Description
@@ -913,5 +911,3 @@ for epoch in range(num_epochs):
 - [PyTorch Tutorial on DCGANs](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
 - [GANs in PyTorch](https://www.geeksforgeeks.org/generative-adversarial-network-gan-using-pytorch/)
 - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
-
----
