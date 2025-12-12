@@ -1,8 +1,6 @@
 # A Learner's Guide to Convolutional Neural Networks (CNNs)
 
-This document provides an in-depth guide to Convolutional Neural Networks (CNNs), the powerhouse behind modern computer vision.
-
----
+An in-depth guide to Convolutional Neural Networks (CNNs), the powerhouse behind modern computer vision.
 
 ## 1. What is a Convolutional Neural Network?
 
