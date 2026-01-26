@@ -4,7 +4,7 @@
 - This document contains **short and long practice questions**.
 - Every question includes **Preparation Hints**.
 - Students are expected to prepare **both concise and long analytical answers**.
-- Many answers are demonstrated or hinted at in **Lecture slides, Workshop notebooks, coding labs, and tutorial materials**. You are strongly advised to study them carefully.
+- Many answers are demonstrated or hinted at in **Lecture slides, Detailed course material supplied, Workshop notebooks, coding labs, and tutorial materials**. You are strongly advised to study them carefully.
 
 **NOTE: Try to include pseudocode or code blocks, main keywords, math formulas during your answer**
 **NOTE: Be concise to the question**
