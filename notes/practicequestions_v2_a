@@ -1,0 +1,506 @@
+# Practice Questions – Neural Networks and Deep Learning
+**Student Instructions**
+- This document contains **short and long practice questions**.
+- Every question includes **Preparation Hints**.
+- Students are expected to prepare **both concise and long analytical answers**.
+- Many answers are demonstrated or hinted at in **Lecture slides, Detailed course material supplied, Workshop notebooks, coding labs, and tutorial materials**. You are strongly advised to study them carefully.
+
+**NOTE: Try to include pseudocode or code blocks, main keywords, math formulas during your answer**
+
+**NOTE: Be concise to the question**udents must review **lecture slides, workshops, coding notebooks, and tutorials**, as many answers require synthesis of theory, math, and implementation.
+
+### Q1
+Starting from the definition of the sigmoid activation function  
+σ(x) = 1 / (1 + e⁻ˣ),  
+derive its first derivative step by step. Show clearly how the derivative can be expressed using σ(x) itself. Finally, explain why this property is computationally advantageous during backpropagation and specify at which stage of training this derivative is used.
+
+**Preparation Hints**
+- Differentiate using chain rule.
+- Try rewriting e⁻ˣ in terms of σ(x).
+- Show σ′(x) = σ(x)(1 − σ(x)).
+- Relate to backward pass efficiency.
+- Recall where gradients are computed.
+
+
+
+### Q2
+Explain in detail the sequence of mathematical operations that occur at a single neuron during the forward pass of a neural network. Use equations to describe the role of weights, bias, and activation functions, and explain how the output of one layer becomes the input to the next layer.
+
+**Preparation Hints**
+- Weighted sum formulation.
+- Bias addition.
+- Non‑linear activation.
+- Layer‑wise propagation.
+- ANN, CNN, and RNN similarities.
+
+
+
+### Q3
+A neural network consists of an input layer with 784 neurons, a hidden layer with 128 neurons, and an output layer with 10 neurons. All layers include bias terms, and ReLU is used in the hidden layer while Sigmoid is used in the output layer.  
+Calculate the total number of trainable parameters in this network and explain each step of your calculation.
+
+**Preparation Hints**
+- Count weights and biases separately.
+- Perform layer‑wise computation.
+- Activation functions do not add parameters.
+- Show all intermediate results.
+
+
+
+### Q4
+An input image of size 64 × 64 × 3 is passed through a convolution layer with a kernel size of 5 × 5, stride 1, padding 2, and 32 filters.  
+(a) Calculate the spatial dimensions and depth of the output feature map.  
+(b) Explain, with reasoning, why padding equal to 2 is used in this case.
+
+**Preparation Hints**
+- Apply convolution output size formula.
+- Padding preserves spatial resolution.
+- Depth equals number of filters.
+- Use diagrams to justify padding choice.
+
+
+
+### Q5
+Design and describe a PyTorch‑based Artificial Neural Network suitable for binary classification on tabular data containing 20 input features. Your answer should explain the choice of network architecture, activation functions, and loss function.
+
+**Preparation Hints**
+- Use nn.Module structure.
+- ReLU in hidden layers.
+- Sigmoid output activation.
+- Binary Cross‑Entropy loss.
+- Refer to workshop code patterns.
+
+
+
+### Q6
+Explain Backpropagation Through Time (BPTT) as applied to Recurrent Neural Networks. Describe how gradients are propagated across time steps and analyze why this method is prone to vanishing gradients. Propose and justify at least one effective solution.
+
+**Preparation Hints**
+- Unrolling through time.
+- Chain rule across timesteps.
+- Gradient decay explanation.
+- LSTM, GRU, or gradient clipping.
+
+
+
+### Q7
+Explain the concept of Dropout regularization in deep neural networks. Describe how Dropout behaves differently during training and evaluation phases, and critically compare Dropout with weight‑based regularization techniques such as L1 or L2 regularization.
+
+**Preparation Hints**
+- Random neuron deactivation.
+- train() vs eval() behavior.
+- Overfitting reduction.
+- Ensemble interpretation.
+- Contrast with weight penalties.
+
+
+
+### Q8
+Deep learning models are often claimed to outperform traditional machine learning approaches on large‑scale unstructured data such as images and text. Discuss this claim critically, providing theoretical reasoning and concrete examples to support your answer.
+
+**Preparation Hints**
+- Automatic feature learning.
+- Scalability with data.
+- CNNs for vision, Transformers for NLP.
+- End‑to‑end optimization.
+
+
+
+### Q9
+For the tasks of image classification, speech‑to‑text translation, stock price prediction, sentiment analysis, and credit risk prediction, identify the most appropriate model or architecture for each task. Justify your selections based on data characteristics and model capabilities.
+
+**Preparation Hints**
+- Spatial vs sequential data.
+- CNN, RNN, Encoder‑Decoder mapping.
+- Tabular data considerations.
+- Justification over listing.
+
+
+
+### Q10
+Explain the Softmax activation function in detail. Include its mathematical formulation, explain its probabilistic properties, and discuss why Softmax is preferred over multiple independent Sigmoid outputs in multi‑class classification problems.
+
+**Preparation Hints**
+- Exponentiation and normalization.
+- Output probabilities sum to one.
+- Mutual exclusivity of classes.
+- Pairing with categorical cross‑entropy.
+
+
+
+### Q11
+Given the logit vector z = [2.0, 1.0, 0.1], compute the Softmax output step by step and interpret the resulting probability distribution in the context of classification confidence.
+
+**Preparation Hints**
+- Compute exponentials.
+- Normalize by total sum.
+- Identify dominant class.
+- Interpret confidence levels.
+
+
+
+### Q12
+Describe the self‑attention mechanism used in Transformer architectures. Explain the roles of Query (Q), Key (K), and Value (V) vectors and how they interact to compute attention scores.
+
+**Preparation Hints**
+- Q–K similarity computation.
+- Attention weights.
+- Weighted sum of values.
+- Scaled dot‑product attention.
+
+
+
+### Q13
+Explain, with clear reasoning, why self‑attention mechanisms are generally more effective than Recurrent Neural Networks when modeling long‑range dependencies in sequences.
+
+**Preparation Hints**
+- Parallel computation.
+- Shorter gradient paths.
+- Global context access.
+- Computational efficiency.
+
+
+
+### Q14
+Compare Mean Squared Error, Binary Cross‑Entropy, and Categorical Cross‑Entropy loss functions. Discuss their mathematical forms, typical applications, and the consequences of choosing an inappropriate loss function.
+
+**Preparation Hints**
+- Regression vs classification.
+- Loss‑activation compatibility.
+- Optimization behavior.
+- Practical examples.
+
+
+
+### Q15
+Explain the architecture and working principle of a Vanilla Autoencoder. Further discuss different variants of autoencoders and explain how the bottleneck layer enforces a compressed representation.
+
+**Preparation Hints**
+- Encoder–decoder pipeline.
+- Latent space role.
+- Denoising and sparse variants.
+- Feature learning intuition.
+
+
+
+### Q16
+Compare Variational Autoencoders and Generative Adversarial Networks as generative models. Your answer should include architectural differences, training objectives, advantages, and limitations of each approach.
+
+**Preparation Hints**
+- Probabilistic vs adversarial learning.
+- KL divergence.
+- Training stability.
+- Output realism.
+
+
+
+### Q17
+Explain gradient descent as an optimization algorithm used in deep learning. Compare batch, stochastic, and mini‑batch gradient descent in terms of convergence, stability, and computational efficiency.
+
+**Preparation Hints**
+- Iterative loss minimization.
+- Noise vs stability trade‑off.
+- GPU utilization.
+- Practical scenarios.
+
+
+
+### Q18
+Describe the internal architecture of a Long Short‑Term Memory (LSTM) network. Explain the role of each gate mathematically and compare LSTM with Gated Recurrent Units (GRU).
+
+**Preparation Hints**
+- Forget, input, output gates.
+- Cell state flow.
+- Parameter comparison.
+- When GRU is preferred.
+
+
+
+### Q19
+Explain the Markov Property in the context of Reinforcement Learning. Discuss why this property is essential for Q‑learning algorithms to function correctly.
+
+**Preparation Hints**
+- State sufficiency.
+- Bellman equation.
+- Transition independence.
+
+
+
+### Q20
+Explain the exploration–exploitation dilemma in reinforcement learning and describe how the epsilon‑greedy strategy addresses this problem.
+
+**Preparation Hints**
+- Learning vs reward trade‑off.
+- Random action selection.
+- Avoiding local optima.
+
+
+
+### Q21
+Describe the complete life cycle of training a neural network for a supervised learning problem, from data collection to deployment and monitoring.
+
+**Preparation Hints**
+- Data preparation.
+- Model design.
+- Training and evaluation.
+- Deployment and feedback.
+
+
+
+### Q22
+A neural network achieves high training accuracy but performs poorly in production. Analyze possible causes for this behavior and propose corrective actions at different stages of the learning pipeline.
+
+**Preparation Hints**
+- Overfitting.
+- Data leakage.
+- Distribution shift.
+- Monitoring strategies.
+
+
+
+### Q23
+Explain the dying ReLU problem in deep neural networks. Analyze its causes and discuss multiple strategies to mitigate this issue.
+
+**Preparation Hints**
+- Zero gradient region.
+- Initialization effects.
+- Leaky ReLU.
+- Batch normalization.
+
+
+
+### Q24
+Explain why ReLU activation functions are generally preferred over Sigmoid and Tanh in deep neural networks.
+
+**Preparation Hints**
+- Gradient saturation.
+- Faster convergence.
+- Sparse activations.
+
+
+
+### Q25
+Explain Batch Normalization in detail and analyze how it improves training stability and convergence speed.
+
+**Preparation Hints**
+- Normalization of activations.
+- Internal covariate shift.
+- Training vs inference.
+- Regularization effect.
+
+
+
+### Q26
+Using mathematical reasoning, explain why vanishing gradients occur in deep neural networks and how network depth influences this phenomenon.
+
+**Preparation Hints**
+- Chain rule multiplication.
+- Small derivatives.
+- Exponential decay with depth.
+
+
+
+### Q27
+Explain why Convolutional Neural Networks are particularly effective for image data compared to fully connected neural networks.
+
+**Preparation Hints**
+- Local receptive fields.
+- Weight sharing.
+- Translation invariance.
+
+
+
+### Q28
+Explain why positional encoding is required in Transformer architectures and describe at least one method used to encode positional information.
+
+**Preparation Hints**
+- Lack of recurrence.
+- Order information.
+- Sinusoidal encodings.
+
+
+
+### Q29
+Compare Encoder‑only, Decoder‑only, and Encoder–Decoder Transformer architectures, highlighting their typical applications.
+
+**Preparation Hints**
+- BERT, GPT, Seq2Seq.
+- Pretraining objectives.
+- Task suitability.
+
+
+
+### Q30
+Explain how attention mechanisms differ fundamentally from recurrent approaches in sequence modeling.
+
+**Preparation Hints**
+- Direct dependencies.
+- Parallelism.
+- Computational complexity.
+
+
+
+### Q31
+Explain experience replay and target networks in Deep Q‑Networks and analyze how they contribute to training stability.
+
+**Preparation Hints**
+- Breaking correlation.
+- Stable targets.
+- Learning efficiency.
+
+
+
+### Q32
+Explain how learning rate scheduling influences convergence and generalization in deep neural networks.
+
+**Preparation Hints**
+- Step decay.
+- Cosine annealing.
+- Fine‑tuning stages.
+
+
+
+### Q33
+Explain the conceptual and practical differences between classification and regression problems in neural networks.
+
+**Preparation Hints**
+- Output types.
+- Loss functions.
+- Activation choices.
+
+
+
+### Q34
+Discuss the ethical risks associated with deploying deep learning and generative AI systems and propose mitigation strategies.
+
+**Preparation Hints**
+- Bias and fairness.
+- Privacy concerns.
+- Responsible AI practices.
+
+
+
+### Q35
+Explain the factors that influence the choice of batch size during neural network training.
+
+**Preparation Hints**
+- Hardware constraints.
+- Gradient variance.
+- Generalization effects.
+
+
+
+### Q36
+Explain common implementation mistakes in PyTorch training loops and describe how they can be avoided.
+
+**Preparation Hints**
+- zero_grad() usage.
+- train() vs eval().
+- Shape mismatches.
+
+
+
+### Q37
+Explain why training loss may decrease while accuracy remains unchanged or improves slowly.
+
+**Preparation Hints**
+- Class imbalance.
+- Threshold effects.
+- Metric–loss mismatch.
+
+
+
+### Q38
+Explain the role of KL divergence in Variational Autoencoders and its effect on the learned latent space.
+
+**Preparation Hints**
+- Posterior regularization.
+- Prior matching.
+- Latent smoothness.
+
+
+
+### Q39
+Explain how transfer learning reduces data requirements and training time in deep learning applications.
+
+**Preparation Hints**
+- Feature reuse.
+- Freezing layers.
+- Domain similarity.
+
+
+
+### Q40
+Explain why gradient clipping is important when training Recurrent Neural Networks.
+
+**Preparation Hints**
+- Exploding gradients.
+- Stable updates.
+- Training robustness.
+
+
+
+### Q41
+Explain the difference between model capacity and model generalization, and analyze how regularization helps balance the two.
+
+**Preparation Hints**
+- Bias–variance trade‑off.
+- Overfitting risk.
+- Regularization methods.
+
+
+
+### Q42
+Explain how over‑parameterization can both benefit and harm deep learning models, depending on data size and regularization.
+
+**Preparation Hints**
+- Expressive power.
+- Risk of memorization.
+- Generalization behavior.
+
+### Q43
+How a complete model trainign takes place, say using PyTorch?
+
+**Preparation Hints**
+- Pick a problem and try to show all major steps as code block or pseudocode.
+
+### Q44
+Explain few activation functions and optimizers?
+
+**Preparation Hints**
+- Include their math formulas
+- Try to explain their key characteristics with pros and cons
+
+### Q45
+A neural network with 3 layers has the following architecture:  
+● Input layer (700 neurons with bias) + ReLU  
+● Hidden layer (128 neurons with bias) + ReLU  
+● Output layer (12 neurons with bias) + Sigmoid  
+Calculate the total number of trainable parameters in this network.
+
+**Preparation Hints**
+- Recall how parameters are computed in fully connected layers.
+- Bias contributes one parameter per neuron.
+- Show step-by-step calculations clearly.
+- Practice similar examples from workshop problem sets.
+
+### Q46
+Calculate feature map size for the provided details:  
+An input image has size 72 × 72 × 3. A convolution layer uses:  
+● Kernel size = 4 × 4  
+● Stride = 1  
+● Padding = 2  
+● Number of filters = 32  
+
+a. Calculate the output feature map size.  
+b. Explain why padding = 2 is chosen here.
+
+**Preparation Hints**
+- Use the convolution output size formula.
+- Understand the concept of “same padding”.
+- Explain padding using diagrams from CNN lectures.
+
+## Final Advice
+- Prepare for **both mathematical explanations and conceptual reasoning**.
+- Practice **writing long/short answers** clearly.
+- Revisit **lecture slides, workshops, and coding labs** for hidden clues and depth.
