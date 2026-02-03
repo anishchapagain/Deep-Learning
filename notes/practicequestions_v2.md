@@ -13,7 +13,7 @@
 A neural network with 3 layers has the following architecture:  
 ● Input layer (700 neurons with bias) + ReLU  
 ● Hidden layer (128 neurons with bias) + ReLU  
-● Output layer (12 neurons with bias) + Sigmoid  
+● Output layer (14 neurons with bias) + Sigmoid  
 Calculate the total number of trainable parameters in this network.
 
 **Preparation Hints**
@@ -121,7 +121,7 @@ Identify the most suitable model or architecture (ML, ANN, CNN, RNN, Encoder–D
 Softmax activation is commonly used in multi-class classification problems.  
 (a) Write the mathematical formula for Softmax and explain its properties.  
 (b) Explain why Softmax is preferred over using multiple Sigmoid outputs for multi-class classification.  
-(c) Calculate the Softmax output for the logit vector z = [2.0, 1.0, 0.1] and interpret the results.
+(c) Calculate the Softmax output for the logit vector z = [1.5, 1.0, 0.2] and interpret the results.
 
 **Preparation Hints**
 - Practice manual Softmax calculation.
